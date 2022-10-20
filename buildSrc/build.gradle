@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+    id 'java-gradle-plugin'
+    id 'org.jetbrains.kotlin.jvm' version "1.7.20"
+}
+
+repositories {
+    gradlePluginPortal()
+    google()
+    mavenCentral()
+}
+
+dependencies {
+    //引用android gradle api, 里面包含transform api
+    implementation 'com.android.tools.build:gradle:7.3.1'
+    //引用asm api
+    implementation 'org.ow2.asm:asm:9.4'
+    implementation 'org.ow2.asm:asm-commons:9.2'
+
+    implementation 'cn.quinnchen.hunter:hunter-transform:1.2.3'
+}
