@@ -1,4 +1,4 @@
-package com.stl.aopplugin.announce;
+package com.stl.aop.annotation;
 
 
 import android.util.Log;

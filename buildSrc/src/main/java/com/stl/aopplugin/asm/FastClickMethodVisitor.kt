@@ -10,7 +10,7 @@ class FastClickMethodVisitor(methodVisitor: MethodVisitor?) :
     var isCheckFastClick = false
     override fun visitAnnotation(descriptor: String, visible: Boolean): AnnotationVisitor {
 //        System.out.println("visitAnnotation() ----- ------  " + descriptor );
-        isCheckFastClick = "Lcom/stl/aopplugin/announce/FastClick;" == descriptor
+        isCheckFastClick = "Lcom/stl/aop/annotation/FastClick;" == descriptor
         return super.visitAnnotation(descriptor, visible)
     }
 
@@ -20,7 +20,7 @@ class FastClickMethodVisitor(methodVisitor: MethodVisitor?) :
             println("visitCode() ----- isCheckFastClick ")
             this.visitMethodInsn(
                 Opcodes.INVOKESTATIC,
-                "com/stl/aopplugin/announce/FastClickUtil",
+                "com/stl/aop/annotation/FastClickUtil",
                 "isFastClick",
                 "()Z",
                 false

@@ -1,4 +1,4 @@
-package com.stl.aopplugin.announce;
+package com.stl.aop.annotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

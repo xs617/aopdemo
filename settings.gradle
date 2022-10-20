@@ -16,3 +16,4 @@ dependencyResolutionManagement {
 rootProject.name = "STLAOP"
 include ':app'
 include ':aopplugin'
+include ':aopannotation'
